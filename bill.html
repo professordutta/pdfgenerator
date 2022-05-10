@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Bill Management</title>
+</head>
+<body>
+    <h1 style="text-align: center; ">Invoice Management System</h1>
+    <form method="POST" action="/invoice" style="text-align: center; ">
+        <input type="text" placeholder="Enter Name" name = "customerName"required><br><br>
+        <input type="text" placeholder="Enter Email" name="customerEmail" required><br><br>
+        <input type="number" placeholder="Enter Phone Number" name="mobile" required><br><br>
+        <input type="number" placeholder="Enter Bill Amount" name = "Amount" required><br><br>
+        <label>Bill Cycle Start Date</label><br>
+        <input type="date"  name="startDate" required><br><br>
+        <label>Bill Cycle End Date</label><br>
+        <input type="date"  name="endDate" required><br><br>
+        <button>Generate Invoice</button>
+    </form>
+</body>
+</html>
